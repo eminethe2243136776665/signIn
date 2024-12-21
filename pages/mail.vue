@@ -6293,6 +6293,12 @@ label + .MuiInput-formControl {
 }
 
 
-
+@media (max-width: 480px) {
+    input {
+        font-size: 14px !important;
+        padding: 8px !important;
+        min-width: 350px !important;
+    }
+}
 
 </style>
